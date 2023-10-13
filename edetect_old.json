@@ -428,6 +428,151 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "7e93f0b5-e61a-49e6-a58d-5b6867095530",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dashboard/riskComputer",
+      "responses": [
+        {
+          "uuid": "c05c3608-138f-4c20-a73f-0bbf6b075e44",
+          "body": "{\r\n\t\"isSuccess\":true\r\n\t\"data\":[\r\n\t  {\r\n    \t\"computerId\":1\r\n    \t\"riskLevel\":50\r\n    },\r\n\t  {\r\n    \t\"computerId\":2\r\n    \t\"riskLevel\":55\r\n    },\r\n\t  {\r\n    \t\"computerId\":3\r\n    \t\"riskLevel\":60\r\n    }\r\n\t]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e6efb501-41bc-4a93-b529-dfb7d3cd9e37",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dashboard/riskProgram",
+      "responses": [
+        {
+          "uuid": "c5b211f3-6f52-4a4f-957e-a220338a1ad7",
+          "body": "{\r\n\t\"isSuccess\":true\r\n\t\"data\":[\r\n  \t  {\r\n      \t\"computerId\":1\r\n      \t\"riskLevel\":4\r\n      \t\"programId\":\"testProgramId\"\r\n      \t\"programName\":\"programName\"\r\n      \t\"programDate\":132540001\r\n      \t\"programPath\":\"testpath1\"\r\n      },\r\n      {\r\n      \t\"computerId\":2\r\n      \t\"riskLevel\":4\r\n      \t\"programId\":\"testProgramId\"\r\n      \t\"programName\":\"programName\"\r\n      \t\"programDate\":132540002\r\n      \t\"programPath\":\"testpath2\"\r\n      },\r\n      {\r\n      \t\"computerId\":3\r\n      \t\"riskLevel\":4\r\n      \t\"programId\":\"testProgramId\"\r\n      \t\"programName\":\"programName\"\r\n      \t\"programDate\":132540003\r\n      \t\"programPath\":\"testpath3\"\r\n      },\r\n\t  ]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "67617b5a-9623-4b17-be7f-6852d4771480",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dashboard/agentState",
+      "responses": [
+        {
+          "uuid": "47473e51-4ad6-43c7-b83c-3e6e1bbeb3f4",
+          "body": "{\r\n\t\"isSuccess\":true\r\n  \t\"data\":[\r\n  \t  {\r\n      \t\"agentId\":1\r\n      \t\"agentIsConnect\":true\r\n      },\r\n  \t  {\r\n      \t\"agentId\":2\r\n      \t\"agentIsConnect\":false\r\n      },\r\n  \t  {\r\n      \t\"agentId\":3\r\n      \t\"agentIsConnect\":true\r\n      }\r\n\t  ]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f32065f9-e550-4366-a345-361e915bf83d",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dashboard/serverState",
+      "responses": [
+        {
+          "uuid": "403862ca-caaa-4671-8900-898bbaacb077",
+          "body": "{\r\n\t\"isSuccess\":boolean\r\n\t\"data\":{\r\n  \t\"cpu\":30 // xx %\r\n  \t\"RAMAll\":1024 \r\n  \t\"RAMUsed\":600 \r\n  \t\"storage\": 65 //  xx %\r\n  }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0fecf7b0-0a0e-44a5-8080-89e1cc27841e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "dashboard/ccConnectCount",
+      "responses": [
+        {
+          "uuid": "b28f07de-13fd-46f4-bcc8-53a542b0bb3e",
+          "body": "{\r\n\t\"isSuccess\":true\r\n\t\"data\":{\r\n  \t\"connectCount\":52 \r\n  }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -482,6 +627,26 @@
     {
       "type": "route",
       "uuid": "16ae1c4c-f430-41b1-9507-dfaceac686e0"
+    },
+    {
+      "type": "route",
+      "uuid": "7e93f0b5-e61a-49e6-a58d-5b6867095530"
+    },
+    {
+      "type": "route",
+      "uuid": "e6efb501-41bc-4a93-b529-dfb7d3cd9e37"
+    },
+    {
+      "type": "route",
+      "uuid": "67617b5a-9623-4b17-be7f-6852d4771480"
+    },
+    {
+      "type": "route",
+      "uuid": "f32065f9-e550-4366-a345-361e915bf83d"
+    },
+    {
+      "type": "route",
+      "uuid": "0fecf7b0-0a0e-44a5-8080-89e1cc27841e"
     }
   ],
   "proxyMode": false,
